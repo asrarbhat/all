@@ -1,0 +1,3 @@
+cmath is for math,and majority of those functions work with double.
+
+cpp doc like java and javascript

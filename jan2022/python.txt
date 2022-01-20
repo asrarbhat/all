@@ -1,0 +1,66 @@
+if isinstance(number,int) and number <20 
+    here python evaluates from left to right hence it is a safe expression.
+
+even if there is just one statment in conditional,write in next line.
+
+name functions in snake case.
+
+if three possible outputs of a function,better use -1 0 1 than True False and -1 and assign True to one in case the function is used in boolean expression and 0 as False.
+
+take care of errors like off by one.
+
+docstring conventions: PEP 257 PYTHON ENHANCEMENT PROPOSOL
+
+    a docstring is a string that occurs as the first statement in a module,function, class, or method definition. it becomes __doc__ attribute of that object. 
+
+    always put in """ """ or use r""" """ or for unicode use u"""  """
+
+    there are two forms:
+         ONE LINERS:
+            def kos_root():
+                """ Return the pathname of the KOS root directory. """
+            triple quotes make it easy to extend later.
+            there is no blank line before or after.
+            the docstring is a phrase ending in a period.
+            it prescribes/order the function or methods effect as a command ("do this
+            ") not as a description eg "Returns the pathname..."\
+            don't write signature of function like (function(a,b)->list))
+
+            signatures are only good for inbuilt methods.
+
+            but the nature of return value cannot be determined so it should be mentioned.
+            hence better form 
+                """Do x and return a list."""
+        MULTI-LINE Docstring:
+            consists of a summary line just like a one-line docstring,followed by a blank line,follwed by a more elaborate  description.
+            the summary line may be used by automatic indexing tools.
+            
+            the summary line can be on same line as """ or in another line.
+
+            the entire docstring is indented same as quotes.
+
+            insert a blank line after all docstrings one line or MULTI that document a class 
+
+            the classes methods are also separated by a line.
+
+            the docstring of a script (a stand alone program) should be usable as its usage message.printed when the script is invoked with incorrect or missing arguments or perhaps with a -h option for help.such a docstrng shoudl document the script's function and command line syntax,enviroment variables,files etc.
+        
+        the docstring of module should generally list the classes,exceptions and functions that are exported. with a one-line summary of each.
+
+        the docstring of a package,i.e the docstring of its __init__.py module shoudl also list the modules and subpackages exported by the package.
+
+        def complex(real=0.0,imag=0.0):
+            """Form a complex number.
+
+            Keyword arguments:
+            real -- the real part (default 0.0)
+            imag -- the imaginary part (default 0.0)
+            """
+
+            if ........
+        
+        type hinting:
+            def hello_world(name: str)->str:
+                business.
+            they are not forced.
+            you can use typechecker to check for it.

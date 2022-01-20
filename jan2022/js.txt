@@ -1,0 +1,3 @@
+jsDocs for docoumentation
+typeof for typechecking and === "number" etc in string as it returns such
+

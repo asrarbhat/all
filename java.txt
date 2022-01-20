@@ -1,0 +1,2 @@
+javaDoc is same as javascript just don't put - in them.
+a isinstance b to check instances.

@@ -1,0 +1,3 @@
+to compile with math use -lm and you get off by 1 error sometimes.
+
+calculate sqrt before for loop otherwise it will be calculated everytime.
